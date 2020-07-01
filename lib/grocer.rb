@@ -7,7 +7,7 @@ def find_item_by_name_in_collection(name, collection)
       return_hash = key
     end  
   end 
-  if return_hash.class == String
+  if return_hash.class == Hash 
     return_hash
   else
     return nil 

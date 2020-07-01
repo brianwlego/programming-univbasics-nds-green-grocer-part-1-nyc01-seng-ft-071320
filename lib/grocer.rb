@@ -17,7 +17,8 @@ end
 
 def consolidate_cart(cart)
   #new_array = []
-  cart.map do |key, value|
+  cart.map do |key|
+    key[:count] => 1 
   binding.pry  
   end
 end

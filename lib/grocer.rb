@@ -17,7 +17,7 @@ end
 
 def consolidate_cart(cart)
   new_array = []
-  cart.each_with_object([]) {|key, a| a = key[:count] => 1}
+  new_array = cart.each_with_object([]) {|key, a| a = key[:count] => 1}
     
     binding.pry
  

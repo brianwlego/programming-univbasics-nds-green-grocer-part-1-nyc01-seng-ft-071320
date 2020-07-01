@@ -11,6 +11,7 @@ def find_item_by_name_in_collection(name, collection)
     return_hash
   else
     return nil 
+  end
 end
 
 def consolidate_cart(cart)

@@ -1,8 +1,12 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
-  collection.each {|key, value| if key[:item] == name, key}
-  #binding.pry
+  return_hash = collection.each do |key, value|
+    if key[:item] == name
+      key
+    end  
+    binding.pry
+  end
 end
 
 def consolidate_cart(cart)

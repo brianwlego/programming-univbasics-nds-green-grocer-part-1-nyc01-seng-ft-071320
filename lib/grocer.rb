@@ -16,15 +16,17 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  binding.pry
-  final_hash = []
-  cart.each do |element|
-    if final_hash[element][:item]
-      final_hash[element][:count] = 1 
-      final_hash >> element
-    binding.pry
+  final_array = []
+  cart.each do |item_hash|
+    target_item = find_item_by_name_in_collection(item_hash[:item], final_array)
+    if target_item
+      target_item[:count] += 1
+    else
+      item_hash[:count] = 1
+      filtered_array << item_hash
     end
   end
+  final_array
 end
 
 

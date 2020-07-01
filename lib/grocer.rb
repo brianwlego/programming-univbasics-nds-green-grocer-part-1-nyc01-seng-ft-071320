@@ -25,6 +25,7 @@ def consolidate_cart(cart)
       item_hash[:count] = 1
       filtered_array << item_hash
     end
+    binding.pry
   end
   final_array
 end

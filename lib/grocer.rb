@@ -7,6 +7,7 @@ def find_item_by_name_in_collection(name, collection)
       return_hash = key
     else
       return_hash = nil 
+      binding.pry
     end  
   end 
   return_hash

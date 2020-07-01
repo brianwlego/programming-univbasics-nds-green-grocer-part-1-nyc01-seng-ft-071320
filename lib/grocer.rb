@@ -5,9 +5,6 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |key, value|
     if key[:item] == name
       return_hash = key
-      # binding.pry
-    elsif  key[:item] != name
-      return_hash = value
     end  
   end 
   return_hash

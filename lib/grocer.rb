@@ -18,7 +18,8 @@ end
 def consolidate_cart(cart)
   final_hash = {}
   cart.each do |element|
-  
+    if final_hash[element][:item].empty?
+      final_hash[element][:item]
     binding.pry
   end
 end

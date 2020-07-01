@@ -16,7 +16,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  new_array = []
+  #new_array = []
   new_array = cart.each_with_object([]) {|key, a| a = key[:count] => 1}
     
     binding.pry

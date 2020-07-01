@@ -16,9 +16,10 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
+  binding.pry
   final_hash = {}
   cart.each do |element|
-    if final_hash[element][:item] = ""
+    if final_hash[element][:item]
       final_hash[element][:count] = 1 
       final_hash >> element
     binding.pry

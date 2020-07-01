@@ -5,12 +5,12 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |key, value|
     if key[:item] == name
       return_hash = key
-    else
-      return_hash = nil 
-      binding.pry
     end  
   end 
-  return_hash
+  if return_hash.class == String
+    return_hash
+  else
+    return nil 
 end
 
 def consolidate_cart(cart)

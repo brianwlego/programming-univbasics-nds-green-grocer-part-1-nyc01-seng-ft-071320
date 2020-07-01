@@ -16,7 +16,11 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  
+  new_array = []
+  cart.each do |key, value|
+    
+    binding.pry
+  end  
 #binding.pry
 end
 

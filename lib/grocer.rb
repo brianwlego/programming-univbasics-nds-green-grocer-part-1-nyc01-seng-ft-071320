@@ -19,7 +19,13 @@ def consolidate_cart(cart)
   cart.map do |key|
     key[:count] = 1
   end
-
+  count = 0 
+  while cart.length < count do
+    if cart[count][:item] == 
+      
+    end
+    count += 1 
+  end   
 end
 
 

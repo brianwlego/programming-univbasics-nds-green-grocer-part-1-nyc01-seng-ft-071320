@@ -16,17 +16,9 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  cart.map do |key|
-    key[:count] = 1
-  end
-  count = 0 
-  while cart.length < count do
-    if cart[count][:item] == cart[count+1][:item]
-      cart[count][:count] += 1  
-      binding.pry
-    end
-    count += 1 
-  end   
+  final_hash = {}
+  
+  
 end
 
 

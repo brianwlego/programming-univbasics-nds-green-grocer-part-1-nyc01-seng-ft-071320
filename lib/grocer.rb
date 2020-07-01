@@ -4,8 +4,8 @@ def find_item_by_name_in_collection(name, collection)
   return_hash = collection.each do |key, value|
     if key[:item] == name
       key
-    end  
     binding.pry
+    end 
   end
 end
 

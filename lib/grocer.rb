@@ -1,7 +1,10 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
-  binding.pry
+  collection.each do |key, value|
+    
+    binding.pry
+  end  
 end
 
 def consolidate_cart(cart)

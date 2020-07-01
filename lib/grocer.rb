@@ -1,7 +1,7 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
-  
+  final_hash = collection.each_with_object({}) {(key,a)
   binding.pry
 end
 

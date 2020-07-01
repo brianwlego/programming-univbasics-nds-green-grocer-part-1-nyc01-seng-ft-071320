@@ -16,7 +16,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  find_item_by_name_in_collection
+  cart.each_with_object([]) {|key, a| 
 binding.pry
 end
 

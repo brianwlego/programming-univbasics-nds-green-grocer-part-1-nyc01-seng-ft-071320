@@ -7,7 +7,8 @@ def find_item_by_name_in_collection(name, collection)
       return_hash = key
       binding.pry
     end  
-  end  
+  end 
+  return_hash
 end
 
 def consolidate_cart(cart)
